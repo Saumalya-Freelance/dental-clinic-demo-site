@@ -9,10 +9,12 @@ import TreatmentsSection from './components/treatments/TreatmentsSection';
 import WhyChooseUsSection from './components/why-us/WhyChooseUsSection';
 import ReviewsSection from './components/reviews/ReviewsSection';
 import ContactSection from './components/contact/ContactSection';
+import PageLoader from './components/layout/PageLoader';
 
 function App() {
   return (
     <div className="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary/20 selection:text-primary min-h-screen">
+      <PageLoader />
       <Header />
       
       <main className="pt-16 md:pt-20 pb-24 md:pb-0">
