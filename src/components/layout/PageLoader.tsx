@@ -11,8 +11,8 @@ const PageLoader = () => {
       // Small timeout to allow the cool animation to show at least a bit
       setTimeout(() => {
         setIsFadingOut(true);
-        setTimeout(() => setIsLoading(false), 500); // Wait for fade-out transition
-      }, 500);
+        setTimeout(() => setIsLoading(false), 2000); // Wait for fade-out transition
+      }, 2500);
     };
 
     if (document.readyState === 'complete') {
@@ -44,17 +44,24 @@ const PageLoader = () => {
         {/* Pulsing Tooth SVG */}
         <div className="animate-pulse flex items-center justify-center">
           <svg 
-            width="48" 
-            height="48" 
+            width="52" 
+            height="52" 
             viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="1.5" 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
-            className="text-primary"
+            className="drop-shadow-[0_0_15px_rgba(var(--color-primary),0.5)]"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M18.5 6c-2.25 0-4.8 1.4-6.5 2.2-1.7-.8-4.25-2.2-6.5-2.2-1.66 0-3 1.34-3 3v.3c0 3.82 2.6 7.4 6 8.5v4.5c0 .55.45 1 1 1h.5c.55 0 1-.45 1-1v-4c0-.55.45-1 1-1h.5c.55 0 1 .45 1 1v4c0 .55.45 1 1 1h.5c.55 0 1-.45 1-1v-4.5c3.4-1.1 6-4.68 6-8.5V9c0-1.66-1.34-3-3-3z"/>
+            <defs>
+              <linearGradient id="toothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="currentColor" stopOpacity="1" />
+                <stop offset="70%" stopColor="currentColor" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="currentColor" stopOpacity="0.5" />
+              </linearGradient>
+            </defs>
+            <path 
+              fill="url(#toothGrad)" 
+              className="text-primary"
+              d="M18.5 6c-2.25 0-4.8 1.4-6.5 2.2-1.7-.8-4.25-2.2-6.5-2.2-1.66 0-3 1.34-3 3v.3c0 3.82 2.6 7.4 6 8.5v4.5c0 .55.45 1 1 1h.5c.55 0 1-.45 1-1v-4c0-.55.45-1 1-1h.5c.55 0 1 .45 1 1v4c0 .55.45 1 1 1h.5c.55 0 1-.45 1-1v-4.5c3.4-1.1 6-4.68 6-8.5V9c0-1.66-1.34-3-3-3z"
+            />
           </svg>
         </div>
       </div>
@@ -62,7 +69,7 @@ const PageLoader = () => {
       {/* Loading Text */}
       <div className="mt-12 flex flex-col items-center gap-2">
         <p className="text-primary font-headline-sm font-bold tracking-[0.2em] animate-pulse">
-          LUMINA
+          LUMINA DENTAL CLINIC
         </p>
         <div className="flex gap-1">
           <div className="w-2 h-2 rounded-full bg-secondary animate-bounce" style={{ animationDelay: '0ms' }}></div>
