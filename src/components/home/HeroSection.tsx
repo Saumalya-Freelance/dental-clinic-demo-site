@@ -35,7 +35,7 @@ const HeroSection = () => {
               <span>Book an Appointment</span>
               <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
             </a>
-            <a className="inline-flex w-full sm:w-auto items-center justify-center gap-2 h-14 px-8 rounded-[16px] bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm border border-outline-variant/20 hover:bg-surface-container transition-colors" href="tel:+15551234567">
+            <a className="inline-flex w-full sm:w-auto items-center justify-center gap-2 h-14 px-8 rounded-[16px] bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm border border-outline-variant/20 hover:bg-surface-container transition-colors" href="tel:+919830012345">
               <span className="material-symbols-outlined text-[20px]">call</span>
               <span>Call Now</span>
             </a>

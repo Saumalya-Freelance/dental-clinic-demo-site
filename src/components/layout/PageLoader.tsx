@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import toothIcon from '../../../public/icons/icons8-tooth.png';
 
 const PageLoader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,28 +42,9 @@ const PageLoader = () => {
         <div className="absolute w-32 h-32 border-4 border-primary border-t-transparent border-r-transparent rounded-full animate-spin shadow-ambient"></div>
         <div className="absolute w-24 h-24 border-4 border-secondary border-b-transparent border-l-transparent rounded-full animate-[spin_1.5s_linear_infinite_reverse]"></div>
         
-        {/* Pulsing Tooth SVG */}
-        <div className="animate-pulse flex items-center justify-center">
-          <svg 
-            width="52" 
-            height="52" 
-            viewBox="0 0 24 24" 
-            className="drop-shadow-[0_0_15px_rgba(var(--color-primary),0.5)]"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <linearGradient id="toothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="currentColor" stopOpacity="1" />
-                <stop offset="70%" stopColor="currentColor" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="currentColor" stopOpacity="0.5" />
-              </linearGradient>
-            </defs>
-            <path 
-              fill="url(#toothGrad)" 
-              className="text-primary"
-              d="M18.5 6c-2.25 0-4.8 1.4-6.5 2.2-1.7-.8-4.25-2.2-6.5-2.2-1.66 0-3 1.34-3 3v.3c0 3.82 2.6 7.4 6 8.5v4.5c0 .55.45 1 1 1h.5c.55 0 1-.45 1-1v-4c0-.55.45-1 1-1h.5c.55 0 1 .45 1 1v4c0 .55.45 1 1 1h.5c.55 0 1-.45 1-1v-4.5c3.4-1.1 6-4.68 6-8.5V9c0-1.66-1.34-3-3-3z"
-            />
-          </svg>
+        {/* Pulsing Tooth Icon */}
+        <div className="animate-pulse flex items-center justify-center relative z-10 drop-shadow-[0_0_15px_rgba(var(--color-primary),0.5)]">
+          <img src={toothIcon} alt="Loading tooth" className="w-16 h-16 object-contain" />
         </div>
       </div>
       

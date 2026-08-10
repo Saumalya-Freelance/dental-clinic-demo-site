@@ -4,7 +4,7 @@ const FloatingWhatsApp = () => {
   return (
     <a 
       className="fixed bottom-20 md:bottom-8 right-4 md:right-8 z-40 bg-[#25D366] hover:bg-[#20b858] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-1" 
-      href="https://wa.me/15551234567"
+      href="https://wa.me/919830012345"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contact us on WhatsApp"
