@@ -1,0 +1,31 @@
+# Lumina Dental Clinic - Implementation Tasks
+
+- `[ ]` **Phase 0: Project Audit + Setup**
+  - `[ ]` Initialize Vite React + TypeScript project
+  - `[ ]` Install Tailwind CSS and setup configuration
+  - `[ ]` Restructure `assets` and `design` folders
+- `[ ]` **Phase 1: Global Design System**
+  - `[ ]` Configure Tailwind theme (colors, fonts, shadows)
+  - `[ ]` Set up global CSS (smooth scroll, fonts)
+- `[ ]` **Phase 2: Global Layout**
+  - `[ ]` Desktop Header component
+  - `[ ]` Mobile Bottom Navigation component
+  - `[ ]` Floating WhatsApp button
+  - `[ ]` Footer component
+- `[ ]` **Phase 3: Home Page (Hero & Trust Highlights)**
+  - `[ ]` HeroSection component
+  - `[ ]` TrustHighlights component
+- `[ ]` **Phase 4: About & Why Choose Us Sections**
+  - `[ ]` AboutSection component
+  - `[ ]` WhyChooseUsSection component
+- `[ ]` **Phase 5: Treatments Section**
+  - `[ ]` ServiceCard component
+  - `[ ]` TreatmentsSection component
+- `[ ]` **Phase 6: Patient Reviews Section**
+  - `[ ]` ReviewCard component
+  - `[ ]` ReviewsSection component
+- `[ ]` **Phase 7: Contact / Appointment Section**
+  - `[ ]` ContactSection component
+- `[ ]` **Phase 8: Assembly & Final Visual QA**
+  - `[ ]` Assemble sections in `App.tsx`
+  - `[ ]` Perform responsive QA against Stitch designs
